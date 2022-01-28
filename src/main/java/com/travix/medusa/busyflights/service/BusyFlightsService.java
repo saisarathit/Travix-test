@@ -51,6 +51,7 @@ public class BusyFlightsService {
             busyFlightsResponses.add(busyFlightsResponse);
         });
 
+        busyFlightsResponses.sort(Comparator.comparing(BusyFlightsResponse::getFare));
         return busyFlightsResponses;
     }
 
