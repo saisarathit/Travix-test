@@ -3,7 +3,6 @@ package com.travix.medusa.busyflights.service;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirRequest;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import com.travix.medusa.busyflights.entity.CrazyAir;
-import com.travix.medusa.busyflights.entity.Flight;
 import com.travix.medusa.busyflights.repository.CrazyAirRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

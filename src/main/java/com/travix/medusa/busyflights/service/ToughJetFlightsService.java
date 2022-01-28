@@ -1,11 +1,7 @@
 package com.travix.medusa.busyflights.service;
 
-import com.travix.medusa.busyflights.domain.crazyair.CrazyAirRequest;
-import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetRequest;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetResponse;
-import com.travix.medusa.busyflights.entity.CrazyAir;
-import com.travix.medusa.busyflights.entity.Flight;
 import com.travix.medusa.busyflights.entity.ToughJet;
 import com.travix.medusa.busyflights.repository.ToughJetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
 import static com.travix.medusa.busyflights.Util.Constants.DISCOUNT;

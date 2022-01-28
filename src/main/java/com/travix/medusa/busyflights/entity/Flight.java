@@ -6,8 +6,6 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 public class Flight {
 
-    //airline_id NUMBER(10) PRIMARY KEY, airlines_name VARCHAR2(20), price  NUMBER(10,2), departure_airport_code VARCHAR2(4),
-    // destination_airport_code VARCHAR2(4), departure_date DATETIME, arrival_date DATETIME  )
     @Id
     @Column(name="airline_id")
     private long airlineId;
