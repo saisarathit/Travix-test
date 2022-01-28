@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+import static com.travix.medusa.busyflights.Util.Constants.DISCOUNT;
+import static com.travix.medusa.busyflights.Util.Constants.TAX;
+
 @Service
 public class ToughJetFlightsService {
 
@@ -48,8 +51,8 @@ public class ToughJetFlightsService {
             toughJetResponse.setBasePrice(flight.getPrice());
             toughJetResponse.setInboundDateTime(flight.getArrivalDate().toString());
             toughJetResponse.setOutboundDateTime(flight.getDepartureDate().toString());
-            toughJetResponse.setDiscount(Math.random());
-            toughJetResponse.setTax(Math.random());
+            toughJetResponse.setDiscount(DISCOUNT);
+            toughJetResponse.setTax(TAX);
             toughJetResponses.add(toughJetResponse);
         }
         return toughJetResponses;

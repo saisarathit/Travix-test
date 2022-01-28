@@ -21,7 +21,6 @@ public class BusyFlightsService {
     @Autowired
     private ToughJetFlightsService toughJetFlightsService;
 
-
     public List<BusyFlightsResponse> getAggregatedBusyFlights(BusyFlightsRequest busyFlightsRequest) {
 
         List<CrazyAirResponse> crazyAirResponses = getCrazyAirResponses(busyFlightsRequest);
